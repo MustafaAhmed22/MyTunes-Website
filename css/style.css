@@ -44,6 +44,10 @@ color: var(--primary-color);
 .text-light{
     color: var(--light-color);
 }
+.light-bg{
+    background: var(--light-color);
+    color: #333;
+}
   img{
       width: 100%;
   }
@@ -186,4 +190,9 @@ color: var(--primary-color);
   
   .cf {
     zoom: 1;
+  }
+  #entertainment{
+      opacity: .8;
+      padding: 10rem;
+      background: url('../img/pexels-vishnu-r-nair-1105666.jpg') no-repeat center/cover;
   }
