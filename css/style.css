@@ -44,9 +44,18 @@ color: var(--primary-color);
 .text-light{
     color: var(--light-color);
 }
+.text-center{
+  text-align:center ;
+}
 .light-bg{
     background: var(--light-color);
     color: #333;
+}
+.gift-cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+  text-align: left;
 }
   img{
       width: 100%;
@@ -128,9 +137,10 @@ color: var(--primary-color);
     padding: 0 3rem;
 }
 #entertainment{
+  text-align: center;
   opacity: .8;
   padding: 10rem;
-  background: url('../img/pexels-vishnu-r-nair-1105666.jpg') no-repeat center/cover;
+  background: url('../img/pexels-vishnu-r-nair-1105666.jpg') no-repeat bottom/cover;
 }
 
   @media screen and (max-width: 580px) {
@@ -184,6 +194,7 @@ color: var(--primary-color);
       width: 100%;
       position: relative;
     }
+
   }
   .cf:before, .cf:after {
     content: "";
@@ -197,4 +208,30 @@ color: var(--primary-color);
   .cf {
     zoom: 1;
   }
-  
+  footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 2rem;
+    text-align: left;
+  }
+.footer-cols ul li{
+list-style: none;
+}
+footer .footer-cols ul li:first-child{
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+}
+footer .footer-bottom{
+  background: #333;
+}
+@media screen and (max-width :780px){
+  .gift-cards{
+    grid-template-columns: 1fr;
+  }
+  #entertainment{
+    font-size: 2rem;
+  }
+}
